@@ -11,7 +11,7 @@ needed to open the hub or download the files.
 
 https://maheshuipah.github.io/BMWAgenticWorkshopMaterial/
 
-Every push to `main` rebuilds and redeploys the site (see `.github/workflows/pages.yml`).
+Every push to `main` rebuilds the site and publishes `dist/` to the `gh-pages` branch, which GitHub Pages serves (see `.github/workflows/pages.yml`).
 
 ## Sign-in page
 
