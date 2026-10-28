@@ -1,0 +1,21 @@
+Before you change anything, show me your plan and wait for my "go": the activities you will add, the arguments and variables, and the UI library elements you will use. Use only uipath studio desktop compatible packages. You can check uipath studio installed on this machine for details. 
+
+In the project RegisterClaim (a cross-platform project), build the first part of an RPA process that registers a claim in Ardenfield ClaimCore through its web UI, using UI Automation in Chrome: only the ClaimCore login. Do not build the new-claim wizard. ClaimCore has no API for registering claims: POST /api/v1/claims always returns 403 ClaimsRegistrationNotLicensed, so the UI is the only way (rule R5 in the attached claims-pdd.md).
+
+Keep the project cross-platform: do not change its compatibility to Windows, and use only activities that support cross-platform.
+
+Output: one argument named exactly claimNumber (no prefix, not out_claimNumber), left empty for now. No variable may have the same name.
+
+Use the UI library in Ardenfield.ClaimCore.Library.1.2.0.nupkg which is available at path "C:\Users\mahesh\Downloads\ardenfield.claimcore.library.1.2.0.nupkg" for every ClaimCore screen and element:
+install it into RegisterClaim from the folder it is in (a local NuGet source) and use its Object Repository elements. Do not capture or create new elements: its login elements are Username, Password and Login Submit. Use Ardenfield.ClaimCore.Library 1.2.0 exactly as it is: do not create, publish or bump a new version of it, and do not add elements to it.
+
+Steps:
+1. Read the ClaimCore address from the asset ClaimCore_BaseUrl and the login from the credential ClaimCore_Login, in the Orchestrator folder the process runs in: do not set a folder path. Never read credentials or addresses from files.
+2. Use one Use Application/Browser card for the whole run: Chrome, a new incognito window every run, closed at the end. Never open, attach to or switch to a second browser window. Set the input method of every UI activity to Chromium API (or Simulate where Chromium API is not offered); never Hardware Events.
+3. Open <ClaimCore_BaseUrl>/login, even if a session seems to exist.
+4. Type the username and password from ClaimCore_Login into the library's Username (id username) and Password (id password), and click its Login Submit (id login-submit).
+5. Check that ClaimCore shows the claims worklist, <ClaimCore_BaseUrl>/claims, with the button id new-claim-btn.
+
+If ClaimCore shows a login error (id login-error), stop and throw a business exception with ClaimCore's message. Do not retry business exceptions (section 8 of the attached claims-pdd.md).
+
+Signing in once is the test, and it is required. Do not publish or deploy anything. When you finish, validate and analyze the project, run it once from uipath studio desktop, and report: whether it signed in and the claims worklist showed, the activities and library elements you used, and anything you could not do or are unsure about.

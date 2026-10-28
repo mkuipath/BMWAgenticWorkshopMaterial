@@ -1,0 +1,115 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 6 0 R >>
+endobj
+5 0 obj
+<< /Length 1875 >>
+stream
+BT /F2 16 Tf 56 740 Td (BrightPath Logistics) Tj ET
+BT /F1 9 Tf 56 726 Td (900 Harbor Commerce Dr) Tj ET
+BT /F1 9 Tf 56 714 Td (Savannah, GA 31401) Tj ET
+BT /F1 9 Tf 56 702 Td (invoices@brightpathlogistics.example) Tj ET
+BT /F1 9 Tf 56 690 Td (Vendor Account / Supplier ID: BPL-3340) Tj ET
+BT /F2 18 Tf 400 740 Td (INVOICE) Tj ET
+BT /F1 10 Tf 400 720 Td (Invoice #: BPL-77410) Tj ET
+BT /F1 10 Tf 400 706 Td (Invoice Date: 2026-08-13) Tj ET
+BT /F1 10 Tf 400 692 Td (PO Number: PO-2025-0102) Tj ET
+BT /F1 10 Tf 400 678 Td (Payment Terms: Net 30) Tj ET
+0.0 G 0.75 w 56 664 m 556 664 l S
+BT /F2 10 Tf 56 646 Td (Bill To:) Tj ET
+BT /F1 9 Tf 56 632 Td (Alderbrook Supply Co.) Tj ET
+BT /F1 9 Tf 56 620 Td (Accounts Payable Dept.) Tj ET
+BT /F1 9 Tf 56 608 Td (4820 Foundry Road, Suite 220) Tj ET
+BT /F1 9 Tf 56 596 Td (Millbrook, OH 44045) Tj ET
+0.87 g
+BT /F2 58 Tf 0.8480 0.5299 -0.5299 0.8480 190 300 Tm (ORIGINAL) Tj ET
+0 g
+0.91 g 56 572 500 18 re f
+0 g
+BT /F2 9 Tf 60 576 Td (Description) Tj ET
+BT /F2 9 Tf 330 576 Td (Qty) Tj ET
+BT /F2 9 Tf 380 576 Td (Unit Price) Tj ET
+BT /F2 9 Tf 470 576 Td (Amount) Tj ET
+BT /F2 8.5 Tf 60 556 Td (Freight handling services -- October \(billed weekly\):) Tj ET
+BT /F1 9 Tf 60 540 Td (  Week of 10/01) Tj ET
+BT /F1 9 Tf 330 540 Td (1) Tj ET
+BT /F1 9 Tf 380 540 Td ($237.50) Tj ET
+BT /F1 9 Tf 470 540 Td ($237.50) Tj ET
+BT /F1 9 Tf 60 524 Td (  Week of 10/08) Tj ET
+BT /F1 9 Tf 330 524 Td (1) Tj ET
+BT /F1 9 Tf 380 524 Td ($237.50) Tj ET
+BT /F1 9 Tf 470 524 Td ($237.50) Tj ET
+BT /F1 9 Tf 60 508 Td (  Week of 10/15) Tj ET
+BT /F1 9 Tf 330 508 Td (1) Tj ET
+BT /F1 9 Tf 380 508 Td ($237.50) Tj ET
+BT /F1 9 Tf 470 508 Td ($237.50) Tj ET
+BT /F1 9 Tf 60 492 Td (  Week of 10/22) Tj ET
+BT /F1 9 Tf 330 492 Td (1) Tj ET
+BT /F1 9 Tf 380 492 Td ($237.50) Tj ET
+BT /F1 9 Tf 470 492 Td ($237.50) Tj ET
+BT /F1 8 Tf 56 472 Td (\(continued on page 2\)) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Length 1495 >>
+stream
+BT /F2 8.5 Tf 56 760 Td (BrightPath Logistics -- Invoice BPL-77410 \(page 2 of 2\)) Tj ET
+0.91 g 56 726 500 18 re f
+0 g
+BT /F2 9 Tf 60 730 Td (Description) Tj ET
+BT /F2 9 Tf 330 730 Td (Qty) Tj ET
+BT /F2 9 Tf 380 730 Td (Unit Price) Tj ET
+BT /F2 9 Tf 470 730 Td (Amount) Tj ET
+BT /F1 9 Tf 60 710 Td (Warehouse storage fee -- October) Tj ET
+BT /F1 9 Tf 330 710 Td (1) Tj ET
+BT /F1 9 Tf 380 710 Td ($390.00) Tj ET
+BT /F1 9 Tf 470 710 Td ($390.00) Tj ET
+0.0 G 0.75 w 330 688 m 556 688 l S
+BT /F2 9 Tf 380 672 Td (Subtotal:) Tj ET
+BT /F1 9 Tf 470 672 Td ($1,340.00) Tj ET
+BT /F2 9 Tf 380 657 Td (Tax \(6%\):) Tj ET
+BT /F1 9 Tf 470 657 Td ($80.40) Tj ET
+0.0 G 0.75 w 380 645 m 556 645 l S
+BT /F2 10 Tf 380 636 Td (Total Due:) Tj ET
+BT /F2 10 Tf 470 636 Td ($1,420.40) Tj ET
+0.0 G 0.75 w 56 602 m 220 602 l S
+BT /F1 8.5 Tf 56 590 Td (Authorized by: ___________________) Tj ET
+BT /F1 7.8 Tf 56 566 Td (Terms & Conditions) Tj ET
+BT /F1 7.8 Tf 56 555 Td (Payment is due per the terms stated above from the invoice date. Late payments may be) Tj ET
+BT /F1 7.8 Tf 56 544 Td (subject to a 1.5% monthly finance charge. Goods remain the property of the seller until) Tj ET
+BT /F1 7.8 Tf 56 533 Td (payment is received in full. Discrepancies must be reported in writing within 10 business) Tj ET
+BT /F1 7.8 Tf 56 522 Td (days of receipt; unreported discrepancies are deemed accepted. This invoice supersedes) Tj ET
+BT /F1 7.8 Tf 56 511 Td (any prior quotation or estimate for the same goods or services.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+8 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000000393 00000 n 
+0000002320 00000 n 
+0000003867 00000 n 
+0000003937 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+4012
+%%EOF
