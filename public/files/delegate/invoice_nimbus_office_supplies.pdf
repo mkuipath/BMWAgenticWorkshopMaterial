@@ -1,0 +1,110 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 6 0 R >>
+endobj
+5 0 obj
+<< /Length 1845 >>
+stream
+BT /F2 16 Tf 56 740 Td (Nimbus Office Supplies) Tj ET
+BT /F1 9 Tf 56 726 Td (1180 Ridgeview Parkway) Tj ET
+BT /F1 9 Tf 56 714 Td (Columbus, OH 43215) Tj ET
+BT /F1 9 Tf 56 702 Td (billing@nimbusoffice.example) Tj ET
+BT /F1 9 Tf 56 690 Td (Vendor Account / Supplier ID: NIM-2291) Tj ET
+BT /F2 18 Tf 400 740 Td (INVOICE) Tj ET
+BT /F1 10 Tf 400 720 Td (Invoice #: INV-88213) Tj ET
+BT /F1 10 Tf 400 706 Td (Invoice Date: 2026-08-14) Tj ET
+BT /F1 10 Tf 400 692 Td (PO Number: PO-2025-0087) Tj ET
+BT /F1 10 Tf 400 678 Td (Payment Terms: Net 30) Tj ET
+0.0 G 0.75 w 56 664 m 556 664 l S
+BT /F2 10 Tf 56 646 Td (Bill To:) Tj ET
+BT /F1 9 Tf 56 632 Td (Alderbrook Supply Co.) Tj ET
+BT /F1 9 Tf 56 620 Td (Accounts Payable Dept.) Tj ET
+BT /F1 9 Tf 56 608 Td (4820 Foundry Road, Suite 220) Tj ET
+BT /F1 9 Tf 56 596 Td (Millbrook, OH 44045) Tj ET
+0.87 g
+BT /F2 58 Tf 0.8480 0.5299 -0.5299 0.8480 190 300 Tm (ORIGINAL) Tj ET
+0 g
+q 0.9945 -0.1045 0.1045 0.9945 400 600 cm
+0.55 G 1.2 w 0 0 130 46 re S
+0.45 g BT /F2 9 Tf 8 32 Td (RECEIVED) Tj ET
+0.45 g BT /F2 9 Tf 8 20 Td (AP DEPT  8/18/26) Tj ET
+0 g Q
+0.91 g 56 572 500 18 re f
+0 g
+BT /F2 9 Tf 60 576 Td (Description) Tj ET
+BT /F2 9 Tf 330 576 Td (Qty) Tj ET
+BT /F2 9 Tf 380 576 Td (Unit Price) Tj ET
+BT /F2 9 Tf 470 576 Td (Amount) Tj ET
+BT /F1 9 Tf 60 556 Td (Copy paper, 20lb, case of 10 reams) Tj ET
+BT /F1 9 Tf 330 556 Td (10) Tj ET
+BT /F1 9 Tf 380 556 Td ($32.50) Tj ET
+BT /F1 9 Tf 470 556 Td ($325.00) Tj ET
+BT /F1 9 Tf 60 540 Td (Toner cartridge, black, high yield) Tj ET
+BT /F1 9 Tf 330 540 Td (8) Tj ET
+BT /F1 9 Tf 380 540 Td ($47.50) Tj ET
+BT /F1 9 Tf 470 540 Td ($380.00) Tj ET
+BT /F1 9 Tf 60 524 Td (Desk organizer, mesh, 3-tier) Tj ET
+BT /F1 9 Tf 330 524 Td (10) Tj ET
+BT /F1 9 Tf 380 524 Td ($8.00) Tj ET
+BT /F1 9 Tf 470 524 Td ($80.00) Tj ET
+BT /F1 8 Tf 56 498 Td (\(continued on page 2\)) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Length 1453 >>
+stream
+BT /F2 8.5 Tf 56 760 Td (Nimbus Office Supplies -- Invoice INV-88213 \(page 2 of 2\)) Tj ET
+0.0 G 0.75 w 330 700 m 556 700 l S
+BT /F2 9 Tf 380 684 Td (Subtotal:) Tj ET
+BT /F1 9 Tf 470 684 Td ($785.00) Tj ET
+BT /F2 9 Tf 380 669 Td (Tax \(8.5%\):) Tj ET
+BT /F1 9 Tf 470 669 Td ($66.72) Tj ET
+0.0 G 0.75 w 380 657 m 556 657 l S
+BT /F2 10 Tf 380 648 Td (Total Due:) Tj ET
+BT /F2 10 Tf 470 648 Td ($851.73) Tj ET
+0.0 G 0.75 w 56 604 m 556 604 l S
+BT /F2 8.5 Tf 56 588 Td (REMITTANCE ADVICE -- detach and return with payment) Tj ET
+0.5 G 0.75 w 56 514 300 58 re S
+BT /F1 8.5 Tf 64 560 Td (Pay to: Nimbus Office Supplies) Tj ET
+BT /F1 8.5 Tf 64 546 Td (Bank: Heartland Regional Bank) Tj ET
+BT /F1 8.5 Tf 64 532 Td (Account #: XXXX-4471    Routing #: 044112233) Tj ET
+BT /F1 8.5 Tf 64 518 Td (Reference: INV-88213 / PO-2025-0087) Tj ET
+BT /F1 7.8 Tf 56 482 Td (Terms & Conditions) Tj ET
+BT /F1 7.8 Tf 56 471 Td (Payment is due per the terms stated above from the invoice date. Late payments may be) Tj ET
+BT /F1 7.8 Tf 56 460 Td (subject to a 1.5% monthly finance charge. Goods remain the property of the seller until) Tj ET
+BT /F1 7.8 Tf 56 449 Td (payment is received in full. Discrepancies must be reported in writing within 10 business) Tj ET
+BT /F1 7.8 Tf 56 438 Td (days of receipt; unreported discrepancies are deemed accepted. This invoice supersedes) Tj ET
+BT /F1 7.8 Tf 56 427 Td (any prior quotation or estimate for the same goods or services.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+8 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000000393 00000 n 
+0000002290 00000 n 
+0000003795 00000 n 
+0000003865 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+3940
+%%EOF

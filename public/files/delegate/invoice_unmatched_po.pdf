@@ -1,0 +1,103 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 6 0 R >>
+endobj
+5 0 obj
+<< /Length 1721 >>
+stream
+BT /F2 16 Tf 56 740 Td (Solvex Industrial Parts) Tj ET
+BT /F1 9 Tf 56 726 Td (220 Foundry Loop) Tj ET
+BT /F1 9 Tf 56 714 Td (Gary, IN 46402) Tj ET
+BT /F1 9 Tf 56 702 Td (ar@solvexindustrial.example) Tj ET
+BT /F1 9 Tf 56 690 Td (Vendor Account / Supplier ID: SOL-4410) Tj ET
+BT /F2 18 Tf 400 740 Td (INVOICE) Tj ET
+BT /F1 10 Tf 400 720 Td (Invoice #: INV-55102) Tj ET
+BT /F1 10 Tf 400 706 Td (Invoice Date: 2026-08-16) Tj ET
+BT /F1 10 Tf 400 692 Td (PO Number: PO-2025-0099 \(pending\)) Tj ET
+BT /F1 10 Tf 400 678 Td (Payment Terms: Net 30) Tj ET
+0.0 G 0.75 w 56 664 m 556 664 l S
+BT /F2 10 Tf 56 646 Td (Bill To:) Tj ET
+BT /F1 9 Tf 56 632 Td (Alderbrook Supply Co.) Tj ET
+BT /F1 9 Tf 56 620 Td (Accounts Payable Dept.) Tj ET
+BT /F1 9 Tf 56 608 Td (4820 Foundry Road, Suite 220) Tj ET
+BT /F1 9 Tf 56 596 Td (Millbrook, OH 44045) Tj ET
+0.965 g 56 532 340 44 re f
+0 g
+0.6 G 0.75 w 56 532 340 44 re S
+BT /F2 8.5 Tf 64 564 Td (PO REFERENCE -- PLEASE CONFIRM) Tj ET
+BT /F1 8 Tf 64 552 Td (PO-2025-0099 quoted per phone call w/ buyer 8/12.) Tj ET
+BT /F1 8 Tf 64 541 Td (Formal PO not yet received in our system as of ship date.) Tj ET
+0.91 g 56 518 500 18 re f
+0 g
+BT /F2 9 Tf 60 522 Td (Description) Tj ET
+BT /F2 9 Tf 330 522 Td (Qty) Tj ET
+BT /F2 9 Tf 380 522 Td (Unit Price) Tj ET
+BT /F2 9 Tf 470 522 Td (Amount) Tj ET
+BT /F1 9 Tf 60 502 Td (Replacement conveyor bearings, set of 12) Tj ET
+BT /F1 9 Tf 330 502 Td (4) Tj ET
+BT /F1 9 Tf 380 502 Td ($365.00) Tj ET
+BT /F1 9 Tf 470 502 Td ($1,460.00) Tj ET
+BT /F1 9 Tf 60 486 Td (Expedited freight surcharge) Tj ET
+BT /F1 9 Tf 330 486 Td (1) Tj ET
+BT /F1 9 Tf 380 486 Td ($200.00) Tj ET
+BT /F1 9 Tf 470 486 Td ($200.00) Tj ET
+BT /F1 8 Tf 56 464 Td (\(continued on page 2\)) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Length 1361 >>
+stream
+BT /F2 8.5 Tf 56 760 Td (Solvex Industrial Parts -- Invoice INV-55102 \(page 2 of 2\)) Tj ET
+0.0 G 0.75 w 330 720 m 556 720 l S
+BT /F2 9 Tf 380 704 Td (Subtotal:) Tj ET
+BT /F1 9 Tf 470 704 Td ($1,660.00) Tj ET
+BT /F2 9 Tf 380 689 Td (Tax \(8.5%\):) Tj ET
+BT /F1 9 Tf 470 689 Td ($141.10) Tj ET
+0.0 G 0.75 w 380 677 m 556 677 l S
+BT /F2 10 Tf 380 668 Td (Total Due:) Tj ET
+BT /F2 10 Tf 470 668 Td ($1,801.10) Tj ET
+0.965 g 56 598 460 40 re f
+0 g
+0.6 G 0.75 w 56 598 460 40 re S
+BT /F2 8.5 Tf 64 626 Td (WARNING -- VERIFY BEFORE PROCESSING) Tj ET
+BT /F1 8 Tf 64 614 Td (This PO number could not be confirmed against the buyer's PO log) Tj ET
+BT /F1 8 Tf 64 603 Td (at time of invoicing. Do not process payment until PO is on file.) Tj ET
+BT /F1 7.8 Tf 56 568 Td (Terms & Conditions) Tj ET
+BT /F1 7.8 Tf 56 557 Td (Payment is due per the terms stated above from the invoice date. Late payments may be) Tj ET
+BT /F1 7.8 Tf 56 546 Td (subject to a 1.5% monthly finance charge. Goods remain the property of the seller until) Tj ET
+BT /F1 7.8 Tf 56 535 Td (payment is received in full. Discrepancies must be reported in writing within 10 business) Tj ET
+BT /F1 7.8 Tf 56 524 Td (days of receipt; unreported discrepancies are deemed accepted. This invoice supersedes) Tj ET
+BT /F1 7.8 Tf 56 513 Td (any prior quotation or estimate for the same goods or services.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+8 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000000393 00000 n 
+0000002166 00000 n 
+0000003579 00000 n 
+0000003649 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+3724
+%%EOF

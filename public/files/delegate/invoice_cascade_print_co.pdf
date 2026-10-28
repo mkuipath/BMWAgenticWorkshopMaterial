@@ -1,0 +1,107 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 6 0 R >>
+endobj
+5 0 obj
+<< /Length 1584 >>
+stream
+BT /F2 16 Tf 56 740 Td (Cascade Print Co.) Tj ET
+BT /F1 9 Tf 56 726 Td (77 Timberline Ave) Tj ET
+BT /F1 9 Tf 56 714 Td (Portland, OR 97205) Tj ET
+BT /F1 9 Tf 56 702 Td (accounts@cascadeprint.example) Tj ET
+BT /F1 9 Tf 56 690 Td (Vendor Account / Supplier ID: CPC-1147) Tj ET
+BT /F2 18 Tf 400 740 Td (INVOICE) Tj ET
+BT /F1 10 Tf 400 720 Td (Invoice #: CP-40922) Tj ET
+BT /F1 10 Tf 400 706 Td (Invoice Date: 2026-08-15) Tj ET
+BT /F1 10 Tf 400 692 Td (PO Number: PO-2025-0091) Tj ET
+BT /F1 10 Tf 400 678 Td (Payment Terms: Net 15) Tj ET
+0.0 G 0.75 w 56 664 m 556 664 l S
+BT /F2 10 Tf 56 646 Td (Bill To:) Tj ET
+BT /F1 9 Tf 56 632 Td (Alderbrook Supply Co.) Tj ET
+BT /F1 9 Tf 56 620 Td (Accounts Payable Dept.) Tj ET
+BT /F1 9 Tf 56 608 Td (4820 Foundry Road, Suite 220) Tj ET
+BT /F1 9 Tf 56 596 Td (Millbrook, OH 44045) Tj ET
+0.965 g 56 534 300 42 re f
+0 g
+0.6 G 0.75 w 56 534 300 42 re S
+BT /F2 8.5 Tf 64 564 Td (NOTE FROM ORDER DESK) Tj ET
+BT /F1 8 Tf 64 552 Td (Rush order -- confirmed by phone w/ buyer 8/10.) Tj ET
+BT /F1 8 Tf 64 541 Td (Ship date moved up; pricing unaffected.) Tj ET
+0.91 g 56 520 500 18 re f
+0 g
+BT /F2 9 Tf 60 524 Td (Description) Tj ET
+BT /F2 9 Tf 330 524 Td (Qty) Tj ET
+BT /F2 9 Tf 380 524 Td (Unit Price) Tj ET
+BT /F2 9 Tf 470 524 Td (Amount) Tj ET
+BT /F1 9 Tf 60 504 Td (Business cards, 16pt matte, box of 2000) Tj ET
+BT /F1 9 Tf 330 504 Td (1) Tj ET
+BT /F1 9 Tf 380 504 Td ($300.00) Tj ET
+BT /F1 9 Tf 470 504 Td ($300.00) Tj ET
+BT /F1 8 Tf 56 484 Td (\(continued on page 2\)) Tj ET
+0.87 g
+BT /F2 64 Tf 0.8660 0.5000 -0.5000 0.8660 210 260 Tm (COPY) Tj ET
+0 g
+endstream
+endobj
+6 0 obj
+<< /Length 1480 >>
+stream
+BT /F2 8.5 Tf 56 760 Td (Cascade Print Co. -- Invoice CP-40922 \(page 2 of 2\)) Tj ET
+0.91 g 56 726 500 18 re f
+0 g
+BT /F2 9 Tf 60 730 Td (Description) Tj ET
+BT /F2 9 Tf 330 730 Td (Qty) Tj ET
+BT /F2 9 Tf 380 730 Td (Unit Price) Tj ET
+BT /F2 9 Tf 470 730 Td (Amount) Tj ET
+BT /F1 9 Tf 60 710 Td (Retractable banner, 33x80in, full color) Tj ET
+BT /F1 9 Tf 330 710 Td (5) Tj ET
+BT /F1 9 Tf 380 710 Td ($26.50) Tj ET
+BT /F1 9 Tf 470 710 Td ($132.50) Tj ET
+0.0 G 0.75 w 330 688 m 556 688 l S
+BT /F2 9 Tf 380 672 Td (Subtotal:) Tj ET
+BT /F1 9 Tf 470 672 Td ($432.50) Tj ET
+BT /F2 9 Tf 380 657 Td (Tax \(7.25%\):) Tj ET
+BT /F1 9 Tf 470 657 Td ($31.36) Tj ET
+0.0 G 0.75 w 380 645 m 556 645 l S
+BT /F2 10 Tf 380 636 Td (Total Due:) Tj ET
+BT /F2 10 Tf 470 636 Td ($463.86) Tj ET
+BT /F1 8.5 Tf 56 612 Td (Please remit payment within 15 days of invoice date.) Tj ET
+BT /F1 7.8 Tf 56 592 Td (Terms & Conditions) Tj ET
+BT /F1 7.8 Tf 56 581 Td (Payment is due per the terms stated above from the invoice date. Late payments may be) Tj ET
+BT /F1 7.8 Tf 56 570 Td (subject to a 1.5% monthly finance charge. Goods remain the property of the seller until) Tj ET
+BT /F1 7.8 Tf 56 559 Td (payment is received in full. Discrepancies must be reported in writing within 10 business) Tj ET
+BT /F1 7.8 Tf 56 548 Td (days of receipt; unreported discrepancies are deemed accepted. This invoice supersedes) Tj ET
+BT /F1 7.8 Tf 56 537 Td (any prior quotation or estimate for the same goods or services.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+8 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000000393 00000 n 
+0000002029 00000 n 
+0000003561 00000 n 
+0000003631 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+3706
+%%EOF

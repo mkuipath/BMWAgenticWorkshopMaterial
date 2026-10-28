@@ -1,0 +1,442 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Meridian Logistics</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root{
+  --ink:#1E2A38; --paper:#F3F5F8; --paper-raised:#FFFFFF; --line:#D8DEE6;
+  --accent:#3454D1; --accent-soft:#E8ECFB; --accent-ink:#1F2E82;
+  --muted:#64748B; --muted-soft:#F0F2F5;
+  --success:#1B7F4C; --success-soft:#E4F5EC;
+  --warn:#9A6205; --warn-soft:#FBF0DC;
+  --sidebar:#182233; --sidebar-ink:#C7D0DE; --sidebar-active:#26334A;
+  --font-body:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:#E7ECF3; --paper:#12161C; --paper-raised:#1A2029; --line:#2B3341;
+    --accent:#7C93F0; --accent-soft:#1D2647; --accent-ink:#C6D0FA;
+    --muted:#8B96A8; --muted-soft:#1E242D;
+    --success:#5FCB92; --success-soft:#12281D;
+    --warn:#E7B25C; --warn-soft:#332812;
+    --sidebar:#0D1117; --sidebar-ink:#9AA6BA; --sidebar-active:#1B2330;
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#E7ECF3; --paper:#12161C; --paper-raised:#1A2029; --line:#2B3341;
+  --accent:#7C93F0; --accent-soft:#1D2647; --accent-ink:#C6D0FA;
+  --muted:#8B96A8; --muted-soft:#1E242D;
+  --success:#5FCB92; --success-soft:#12281D;
+  --warn:#E7B25C; --warn-soft:#332812;
+  --sidebar:#0D1117; --sidebar-ink:#9AA6BA; --sidebar-active:#1B2330;
+}
+
+*{box-sizing:border-box;}
+body{background:var(--paper); color:var(--ink); font-family:var(--font-body); font-size:14.5px; line-height:1.5;}
+.mono, input, .amount{font-family:var(--font-mono);}
+button{font-family:var(--font-body);}
+[hidden]{display:none!important;}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+
+/* ---------- LOGIN ---------- */
+#view-login{min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px;}
+.login-card{background:var(--paper-raised); border:1px solid var(--line); border-radius:14px; padding:40px 36px; width:100%; max-width:380px; box-shadow:0 1px 3px rgba(0,0,0,0.06);}
+.login-brand{display:flex; align-items:center; gap:10px; margin-bottom:26px;}
+.login-brand .mark{width:34px; height:34px; border-radius:8px; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:15px; flex:none;}
+.login-brand .name{font-weight:700; font-size:17px; letter-spacing:-0.01em;}
+.login-card h1{font-size:15.5px; font-weight:600; margin:0 0 4px;}
+.login-card .sub{color:var(--muted); font-size:13px; margin:0 0 22px;}
+.field{margin-bottom:16px;}
+.field label{display:block; font-size:12.5px; font-weight:600; color:var(--muted); margin-bottom:6px; text-transform:uppercase; letter-spacing:.03em;}
+.field input, .field select{width:100%; padding:9px 11px; border:1px solid var(--line); border-radius:8px; background:var(--paper); color:var(--ink); font-size:14px;}
+.field input:focus, .field select:focus{border-color:var(--accent);}
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:6px; padding:10px 16px; border-radius:8px; border:1px solid transparent; font-size:14px; font-weight:600; cursor:pointer; transition:filter .12s;}
+.btn:hover{filter:brightness(1.05);}
+.btn-primary{background:var(--accent); color:#fff; width:100%;}
+.btn-secondary{background:var(--paper-raised); color:var(--ink); border-color:var(--line);}
+.btn-ghost{background:transparent; color:var(--muted); border-color:var(--line);}
+.btn-sm{padding:6px 11px; font-size:12.5px;}
+.hint{margin-top:16px; padding:11px 13px; background:var(--muted-soft); border-radius:8px; font-size:12.5px; color:var(--muted); line-height:1.5;}
+.hint b{color:var(--ink); font-family:var(--font-mono);}
+
+/* ---------- SHELL ---------- */
+#view-app{display:grid; grid-template-columns:220px 1fr; min-height:100vh;}
+.sidebar{background:var(--sidebar); color:var(--sidebar-ink); padding:20px 14px; display:flex; flex-direction:column; gap:2px;}
+.sidebar .brand{display:flex; align-items:center; gap:9px; padding:6px 8px 20px;}
+.sidebar .brand .mark{width:26px; height:26px; border-radius:6px; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:12px; flex:none;}
+.sidebar .brand .name{color:#fff; font-weight:700; font-size:14.5px;}
+.navgroup{margin-bottom:4px;}
+.navitem{display:flex; align-items:center; gap:9px; padding:9px 10px; border-radius:7px; cursor:pointer; font-size:13.5px; color:var(--sidebar-ink); user-select:none;}
+.navitem:hover{background:var(--sidebar-active); color:#fff;}
+.navitem.active{background:var(--accent); color:#fff; font-weight:600;}
+.navitem .ic{width:16px; text-align:center; opacity:.85; font-family:var(--font-mono); font-size:12px;}
+.subnav{margin-left:22px; margin-top:2px; margin-bottom:6px; display:flex; flex-direction:column; gap:1px;}
+.subnav .navitem{font-size:12.8px; padding:7px 10px;}
+.sidebar-foot{margin-top:auto; padding-top:14px; border-top:1px solid rgba(255,255,255,0.08); font-size:12px; color:var(--sidebar-ink);}
+.sidebar-foot .who{display:flex; justify-content:space-between; align-items:center;}
+.sidebar-foot a{color:var(--sidebar-ink); text-decoration:underline; cursor:pointer;}
+
+.main{padding:28px 36px 60px; overflow-x:auto;}
+.topbar{display:flex; align-items:baseline; justify-content:space-between; margin-bottom:22px; flex-wrap:wrap; gap:8px;}
+.crumb{font-family:var(--font-mono); font-size:11.5px; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; margin-bottom:4px;}
+.pagetitle{font-size:21px; font-weight:700; letter-spacing:-0.01em;}
+.pagesub{color:var(--muted); font-size:13px; margin-top:3px; max-width:60ch;}
+
+.panel{background:var(--paper-raised); border:1px solid var(--line); border-radius:12px; padding:22px 24px; margin-bottom:20px;}
+.panel h2{font-size:14.5px; font-weight:700; margin:0 0 3px;}
+.panel .desc{color:var(--muted); font-size:12.8px; margin:0 0 16px;}
+
+.tilegrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; margin-bottom:22px;}
+.tile{background:var(--paper-raised); border:1px solid var(--line); border-radius:12px; padding:16px 18px; cursor:pointer; transition:border-color .12s;}
+.tile:hover{border-color:var(--accent);}
+.tile .ttitle{font-weight:700; font-size:13.8px; margin-bottom:4px;}
+.tile .tdesc{color:var(--muted); font-size:12.3px; line-height:1.4;}
+
+.formgrid{display:grid; grid-template-columns:1fr 1fr; gap:16px 20px;}
+.formgrid .full{grid-column:1/-1;}
+.formactions{display:flex; gap:10px; margin-top:22px; padding-top:18px; border-top:1px solid var(--line);}
+
+.tablewrap{overflow-x:auto; border:1px solid var(--line); border-radius:10px;}
+table{border-collapse:collapse; width:100%; min-width:560px; font-size:13.3px;}
+th,td{padding:10px 14px; border-bottom:1px solid var(--line); text-align:left; white-space:nowrap;}
+th{font-family:var(--font-mono); font-size:10.5px; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); background:var(--muted-soft);}
+tr:last-child td{border-bottom:none;}
+.amount{font-variant-numeric:tabular-nums; font-weight:600;}
+.pill{display:inline-flex; align-items:center; gap:5px; font-family:var(--font-mono); font-size:11px; padding:3px 9px; border-radius:999px; font-weight:600; text-transform:uppercase; letter-spacing:.03em;}
+.pill.success{background:var(--success-soft); color:var(--success);}
+.empty{padding:34px 20px; text-align:center; color:var(--muted); font-size:13px;}
+
+.toast{position:fixed; bottom:24px; right:24px; background:var(--paper-raised); border:1px solid var(--line); border-left:4px solid var(--success); border-radius:10px; padding:14px 18px; box-shadow:0 6px 20px rgba(0,0,0,0.12); max-width:340px; font-size:13px; z-index:50; animation:rise .25s ease both;}
+.toast.warn{border-left-color:var(--warn);}
+.toast b{display:block; margin-bottom:2px; font-size:13.5px;}
+@keyframes rise{from{opacity:0; transform:translateY(8px);} to{opacity:1; transform:translateY(0);}}
+
+.attach-row{display:flex; align-items:center; gap:10px; padding:9px 11px; border:1px dashed var(--line); border-radius:8px; font-size:12.8px; color:var(--muted);}
+.attach-row input[type=file]{font-size:12.5px;}
+.filename{font-family:var(--font-mono); color:var(--ink);}
+
+@media (max-width:760px){
+  #view-app{grid-template-columns:1fr;}
+  .sidebar{display:none;}
+  .formgrid{grid-template-columns:1fr;}
+}
+</style>
+
+<!-- ============================= LOGIN ============================= -->
+<div id="view-login">
+  <div class="login-card">
+    <div class="login-brand"><span class="mark">ML</span><span class="name">Meridian Logistics</span></div>
+    <h1>Sign in to Payment Processing</h1>
+    <p class="sub">Practice environment for the Delegate training module.</p>
+    <div class="field">
+      <label for="loginUser">Username</label>
+      <input id="loginUser" type="text" value="rwhitfield" autocomplete="username">
+    </div>
+    <div class="field">
+      <label for="loginPass">Password</label>
+      <input id="loginPass" type="password" value="practice2026" autocomplete="current-password">
+    </div>
+    <button class="btn btn-primary" onclick="doLogin()">Log In</button>
+    <div class="hint">Practice login &mdash; any credentials work. Default: <b>rwhitfield</b> / <b>practice2026</b>.</div>
+  </div>
+</div>
+
+<!-- ============================= APP SHELL ============================= -->
+<div id="view-app" hidden>
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">ML</span><span class="name">Meridian Logistics</span></div>
+
+    <div class="navgroup">
+      <div class="navitem" id="nav-dashboard" onclick="showView('dashboard')"><span class="ic">&#9679;</span>Dashboard</div>
+    </div>
+
+    <div class="navgroup">
+      <div class="navitem" id="nav-pp" onclick="showView('pp')"><span class="ic">&#9679;</span>Payment Processing</div>
+      <div class="subnav">
+        <div class="navitem" id="nav-newinvoice" onclick="showView('newinvoice')">New &rarr; Invoice Registration with PO</div>
+      </div>
+    </div>
+
+    <div class="navgroup">
+      <div class="navitem" id="nav-pos" onclick="showView('pos')"><span class="ic">&#9679;</span>Purchase Orders</div>
+    </div>
+
+    <div class="navgroup">
+      <div class="navitem" id="nav-invoices" onclick="showView('invoices')"><span class="ic">&#9679;</span>Registered Invoices</div>
+    </div>
+
+    <div class="sidebar-foot">
+      <div class="who"><span>rwhitfield</span><a onclick="doLogout()">Log out</a></div>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <!-- DASHBOARD -->
+    <section id="page-dashboard" class="page">
+      <div class="topbar">
+        <div>
+          <div class="crumb">Home</div>
+          <div class="pagetitle">Dashboard</div>
+          <div class="pagesub">Welcome back. Here's what's available in this practice environment.</div>
+        </div>
+      </div>
+      <div class="tilegrid">
+        <div class="tile" onclick="showView('newinvoice')">
+          <div class="ttitle">New Invoice Registration</div>
+          <div class="tdesc">Register a supplier invoice against a purchase order.</div>
+        </div>
+        <div class="tile" onclick="showView('pos')">
+          <div class="ttitle">Purchase Orders</div>
+          <div class="tdesc">Look up POs on file &mdash; supplier, number, and expected amount.</div>
+        </div>
+        <div class="tile" onclick="showView('invoices')">
+          <div class="ttitle">Registered Invoices</div>
+          <div class="tdesc">Review everything submitted so far in this session.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAYMENT PROCESSING OVERVIEW -->
+    <section id="page-pp" class="page" hidden>
+      <div class="topbar">
+        <div>
+          <div class="crumb">Payment Processing</div>
+          <div class="pagetitle">Payment Processing</div>
+          <div class="pagesub">Register incoming supplier invoices and reconcile them against purchase orders.</div>
+        </div>
+        <button class="btn btn-primary" onclick="showView('newinvoice')">+ New</button>
+      </div>
+      <div class="panel">
+        <h2>New &rarr; Invoice Registration with PO</h2>
+        <p class="desc">Extract an invoice's details and enter them here to register it against an existing purchase order.</p>
+        <button class="btn btn-secondary" onclick="showView('newinvoice')">Open Invoice Registration with PO</button>
+      </div>
+    </section>
+
+    <!-- NEW INVOICE REGISTRATION -->
+    <section id="page-newinvoice" class="page" hidden>
+      <div class="topbar">
+        <div>
+          <div class="crumb">Payment Processing &rsaquo; New</div>
+          <div class="pagetitle">Invoice Registration with PO</div>
+          <div class="pagesub">Enter the invoice details and match them to a purchase order on file.</div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="formgrid">
+          <div class="field"><label for="f-supplierId">Supplier ID</label><input id="f-supplierId" type="text" placeholder="e.g. NIM-2291"></div>
+          <div class="field"><label for="f-supplierName">Supplier Name</label><input id="f-supplierName" type="text" placeholder="e.g. Nimbus Office Supplies"></div>
+          <div class="field"><label for="f-invoiceNumber">Invoice Number</label><input id="f-invoiceNumber" type="text" placeholder="e.g. INV-88213"></div>
+          <div class="field"><label for="f-poNumber">PO Number</label><input id="f-poNumber" type="text" placeholder="e.g. PO-2025-0087"></div>
+          <div class="field"><label for="f-invoiceDate">Invoice Date</label><input id="f-invoiceDate" type="date"></div>
+          <div class="field"><label for="f-amount">Amount Before Tax ($)</label><input id="f-amount" type="number" step="0.01" placeholder="0.00"></div>
+          <div class="field"><label for="f-taxRate">Tax Rate (%)</label><input id="f-taxRate" type="number" step="0.01" placeholder="0.00"></div>
+          <div class="field"><label for="f-total">Total (after tax)</label><input id="f-total" type="text" placeholder="0.00"></div>
+          <div class="field full">
+            <label>Supporting Documents</label>
+            <div class="attach-row">
+              <input type="file" id="f-attachment" onchange="onAttach()">
+              <span id="attachStatus" class="filename">No file attached</span>
+            </div>
+          </div>
+        </div>
+        <div class="formactions">
+          <button class="btn btn-primary" onclick="saveInvoice()">Save Invoice</button>
+          <button class="btn btn-ghost" onclick="resetForm()">Clear Form</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PURCHASE ORDERS -->
+    <section id="page-pos" class="page" hidden>
+      <div class="topbar">
+        <div>
+          <div class="crumb">Reference Data</div>
+          <div class="pagetitle">Purchase Orders</div>
+          <div class="pagesub">Read-only. Every invoice should reconcile against one of these.</div>
+        </div>
+      </div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>PO Number</th><th>Supplier</th><th>Supplier ID</th><th>Expected Amount</th></tr></thead>
+          <tbody id="poTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- REGISTERED INVOICES -->
+    <section id="page-invoices" class="page" hidden>
+      <div class="topbar">
+        <div>
+          <div class="crumb">Payment Processing</div>
+          <div class="pagetitle">Registered Invoices</div>
+          <div class="pagesub">Everything submitted so far in this practice session.</div>
+        </div>
+        <button class="btn btn-ghost btn-sm" onclick="resetPractice()">Reset practice data</button>
+      </div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Invoice #</th><th>Supplier</th><th>PO Number</th><th>Invoice Date</th><th>Total</th><th>Registered</th><th>Attachment</th></tr></thead>
+          <tbody id="invoiceTableBody"></tbody>
+        </table>
+        <div id="invoiceEmpty" class="empty" hidden>No invoices registered yet &mdash; submit one from Payment Processing &rarr; New.</div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script>
+const purchaseOrders = [
+  { po:'PO-2025-0087', supplier:'Nimbus Office Supplies', supplierId:'NIM-2291', amount:785.00 },
+  { po:'PO-2025-0091', supplier:'Cascade Print Co.', supplierId:'CPC-1147', amount:432.50 },
+  { po:'PO-2025-0102', supplier:'BrightPath Logistics', supplierId:'BPL-3340', amount:1290.00 },
+];
+
+function loadInvoices(){
+  try { return JSON.parse(localStorage.getItem('ml_invoices')||'[]'); } catch(e){ return []; }
+}
+function saveInvoices(list){
+  try { localStorage.setItem('ml_invoices', JSON.stringify(list)); } catch(e){}
+}
+function isLoggedIn(){
+  try { return localStorage.getItem('ml_loggedin') === '1'; } catch(e){ return false; }
+}
+
+function doLogin(){
+  try { localStorage.setItem('ml_loggedin','1'); } catch(e){}
+  document.getElementById('view-login').hidden = true;
+  document.getElementById('view-app').hidden = false;
+  renderPOTable();
+  renderInvoiceTable();
+  showView('dashboard');
+}
+function doLogout(){
+  try { localStorage.setItem('ml_loggedin','0'); } catch(e){}
+  document.getElementById('view-app').hidden = true;
+  document.getElementById('view-login').hidden = false;
+}
+
+function showView(name){
+  document.querySelectorAll('.page').forEach(p=>p.hidden = true);
+  document.querySelectorAll('.navitem').forEach(n=>n.classList.remove('active'));
+  const page = document.getElementById('page-'+name);
+  if (page) page.hidden = false;
+  const map = {dashboard:'nav-dashboard', pp:'nav-pp', newinvoice:'nav-newinvoice', pos:'nav-pos', invoices:'nav-invoices'};
+  const nav = document.getElementById(map[name]);
+  if (nav) nav.classList.add('active');
+  if (name === 'invoices') renderInvoiceTable();
+  if (name === 'pos') renderPOTable();
+  window.scrollTo(0,0);
+}
+
+function renderPOTable(){
+  const body = document.getElementById('poTableBody');
+  body.innerHTML = purchaseOrders.map(p => `
+    <tr>
+      <td class="mono">${p.po}</td>
+      <td>${p.supplier}</td>
+      <td class="mono">${p.supplierId}</td>
+      <td class="amount">$${p.amount.toFixed(2)}</td>
+    </tr>`).join('');
+}
+
+let lastAttachmentName = '';
+function onAttach(){
+  const f = document.getElementById('f-attachment').files[0];
+  lastAttachmentName = f ? f.name : '';
+  document.getElementById('attachStatus').textContent = f ? f.name : 'No file attached';
+}
+
+
+function saveInvoice(){
+  const supplierId = document.getElementById('f-supplierId').value.trim();
+  const supplierName = document.getElementById('f-supplierName').value.trim();
+  const invoiceNumber = document.getElementById('f-invoiceNumber').value.trim();
+  const poNumber = document.getElementById('f-poNumber').value.trim();
+  const invoiceDate = document.getElementById('f-invoiceDate').value;
+  const amount = document.getElementById('f-amount').value;
+  const taxRate = document.getElementById('f-taxRate').value;
+  const total = document.getElementById('f-total').value;
+
+  if (!supplierName || !invoiceNumber || !poNumber || !amount || !taxRate || !total) {
+    toast('Fill in supplier, invoice number, PO number, amount, tax rate, and total before saving.', true);
+    return;
+  }
+
+  const list = loadInvoices();
+  list.push({
+    supplierId, supplierName, invoiceNumber, poNumber, invoiceDate,
+    amount: parseFloat(amount), taxRate: parseFloat(taxRate), total,
+    attachment: lastAttachmentName,
+    registeredAt: new Date().toLocaleString()
+  });
+  saveInvoices(list);
+  toast('Invoice ' + invoiceNumber + ' registered.');
+  resetForm();
+  renderInvoiceTable();
+}
+
+function resetForm(){
+  ['f-supplierId','f-supplierName','f-invoiceNumber','f-poNumber','f-invoiceDate','f-amount','f-taxRate','f-total'].forEach(id=>{
+    document.getElementById(id).value = '';
+  });
+  lastAttachmentName = '';
+  document.getElementById('attachStatus').textContent = 'No file attached';
+  document.getElementById('f-attachment').value = '';
+}
+
+function renderInvoiceTable(){
+  const list = loadInvoices();
+  const body = document.getElementById('invoiceTableBody');
+  const empty = document.getElementById('invoiceEmpty');
+  if (!list.length) {
+    body.innerHTML = '';
+    empty.hidden = false;
+    return;
+  }
+  empty.hidden = true;
+  body.innerHTML = list.map(inv => `
+    <tr>
+      <td class="mono">${inv.invoiceNumber}</td>
+      <td>${inv.supplierName}</td>
+      <td class="mono">${inv.poNumber}</td>
+      <td>${inv.invoiceDate || '&mdash;'}</td>
+      <td class="amount">${inv.total}</td>
+      <td>${inv.registeredAt}</td>
+      <td>${inv.attachment ? '<span class="pill success">Attached</span>' : '&mdash;'}</td>
+    </tr>`).join('');
+}
+
+function resetPractice(){
+  saveInvoices([]);
+  renderInvoiceTable();
+  toast('Practice data cleared.');
+}
+
+let toastTimer = null;
+function toast(msg, warn){
+  let el = document.getElementById('toastEl');
+  if (el) el.remove();
+  el = document.createElement('div');
+  el.id = 'toastEl';
+  el.className = 'toast' + (warn ? ' warn' : '');
+  el.innerHTML = '<b>' + (warn ? 'Check this' : 'Done') + '</b>' + msg;
+  document.body.appendChild(el);
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>{ el.remove(); }, 4200);
+}
+
+// init
+if (isLoggedIn()) {
+  document.getElementById('view-login').hidden = true;
+  document.getElementById('view-app').hidden = false;
+  renderPOTable();
+  renderInvoiceTable();
+  showView('dashboard');
+}
+</script>
+
+</body></html>
