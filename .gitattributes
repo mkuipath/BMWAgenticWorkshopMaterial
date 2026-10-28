@@ -1,0 +1,6 @@
+# Workshop files must be served byte-exact: never normalise line endings
+public/files/** -text
+*.pdf binary
+*.zip binary
+*.mp4 binary
+*.png binary
